@@ -4,7 +4,8 @@
   "info": {
     "singularName": "content",
     "pluralName": "contents",
-    "displayName": "content"
+    "displayName": "content",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -46,20 +47,26 @@
       "type": "integer"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "link": {
       "type": "string"
     },
     "author": {
       "type": "string"
+    },
+    "content_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
