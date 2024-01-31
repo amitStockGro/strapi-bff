@@ -389,6 +389,7 @@ export interface ApiContentContent extends Schema.CollectionType {
     author: Attribute.String;
     content_id: Attribute.String & Attribute.Required & Attribute.Unique;
     order: Attribute.Integer;
+    thumbnail_url: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

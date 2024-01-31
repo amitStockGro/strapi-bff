@@ -70,6 +70,9 @@
     },
     "order": {
       "type": "integer"
+    },
+    "thumbnail_url": {
+      "type": "string"
     }
   }
 }
